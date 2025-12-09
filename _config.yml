@@ -18,9 +18,9 @@ repository: "Magnus0100/Magnus0100.github.io" # 必须是 "用户名/仓库名"
 # 2. 侧边栏作者信息 (Site Author)
 # -----------------------
 author:
-  avatar: "profile.png"  # 请确保你的照片放在 images/ 文件夹下，并命名为 profile.png (支持jpg/png)
+  avatar: "me.jpg"  # 请确保你的照片放在 images/ 文件夹下，并命名为 profile.png (支持jpg/png)
   name: "Weilong Guan (关伟龙)"
-  pronouns: "he/him" # 可选
+  pronouns: "he" # 可选
   bio: "Ph.D. Candidate <br> Zhejiang University <br><br> M.Phil. @ HKUST(GZ)" # 支持HTML换行
   location: "Hangzhou, China"
   employer: "Zhejiang University"
