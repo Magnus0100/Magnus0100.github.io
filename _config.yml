@@ -9,7 +9,7 @@ site_theme: "default"
 title: "Weilong Guan"
 title_separator: "-"
 name: &name "Weilong Guan"
-description: &description "Ph.D. Candidate at Zhejiang University. Research in EDA, AI for Science, and Photonic ICs."
+description: &description "Ph.D. Student at State Key Lab of CAD&CG, Zhejiang University. Research in Computer Graphics, AI for Science, and Physics-based Simulation."
 url: "https://Magnus0100.github.io" # 你的GitHub主页地址
 baseurl: "" # 个人主页通常留空
 repository: "Magnus0100/Magnus0100.github.io" # 必须是 "用户名/仓库名"
@@ -18,26 +18,28 @@ repository: "Magnus0100/Magnus0100.github.io" # 必须是 "用户名/仓库名"
 # 2. 侧边栏作者信息 (Site Author)
 # -----------------------
 author:
-  avatar: "me.jpg"  # 请确保你的照片放在 images/ 文件夹下，并命名为 profile.png (支持jpg/png)
+  # 请确保 images/ 文件夹下有这张照片
+  avatar: "me.jpg"  
   name: "Weilong Guan (关伟龙)"
-  pronouns: "he" # 可选
-  bio: "Ph.D. Candidate <br> Zhejiang University <br><br> M.Phil. @ HKUST(GZ)" # 支持HTML换行
+  pronouns: "he/him" 
+  
+  # 侧边栏简介：只保留博士和硕士
+  bio: "Ph.D. Student <br> State Key Lab of CAD&CG <br> Zhejiang University "
+  
   location: "Hangzhou, China"
   employer: "Zhejiang University"
-  email: "12521183@zju.edu.cn" # 浙大邮箱
+  email: "12521183@zju.edu.cn" 
 
-  # 学术链接 (把不需要的加 # 注释掉，需要的填入具体链接/ID)
-  googlescholar: "lJgP7PIAAAAJ" # 例如: "PS_CX0AAAAAJ" (只需填ID，不需要完整链接)
-  # researchgate: "你的ResearchGate链接"
-  # orcid: "你的ORCID链接"
+  # 学术链接
+  googlescholar: "lJgP7PIAAAAJ" 
   
   # 代码仓库
-  github: "Magnus0100" # 你的GitHub用户名
+  github: "Magnus0100" 
   
-  # 社交媒体 (学术主页通常只需要LinkedIn或Twitter，其他的可以注释掉)
-  #linkedin: "你的LinkedIn用户名" 
-  # twitter: "你的Twitter用户名"
-  # zhihu: "你的知乎用户名"
+  # 社交媒体 (暂不需要的可保持注释)
+  # linkedin: "" 
+  # twitter: ""
+  # zhihu: ""
 
 # -----------------------
 # 3. 论文分类 (Publication Category)
@@ -53,24 +55,24 @@ publication_category:
 # -----------------------
 # 4. 网站功能设置 (Site Settings)
 # -----------------------
-teaser: # 默认预览图，可留空
-breadcrumbs: true # 开启面包屑导航，建议开启
+teaser: # 默认预览图
+breadcrumbs: true # 面包屑导航
 words_per_minute: 160
-future: true
+future: true # 强制显示“未来日期”的论文
 read_more: "disabled"
-talkmap_link: false # 如果没有很多演讲地点，建议关闭
+talkmap_link: false 
 atom_feed:
   hide: false
   path: # 默认使用 feed.xml
 
-# 评论功能 (默认关闭，学术主页通常不需要)
+# 评论功能 (默认关闭)
 comments:
   provider: false
 
 # -----------------------
 # 5. SEO 与 统计 (SEO & Analytics)
 # -----------------------
-# Google Analytics (如果不需要统计流量，provider填 false)
+# Analytics (已关闭，改为使用 ClustrMaps 地图)
 analytics:
   provider: false 
   google:
@@ -78,10 +80,10 @@ analytics:
 
 # 社交分享预览设置
 og_image: # 分享链接时显示的图片
-og_description: "Personal Website of Weilong Guan"
+og_description: "Personal Website of Weilong Guan (ZJU Ph.D.)"
 
 # -----------------------
-# 6. 系统构建配置 (Build Settings - 尽量不要动)
+# 6. 系统构建配置 (Build Settings)
 # -----------------------
 include:
   - .htaccess
@@ -137,7 +139,7 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-# 集合配置 (不需要的板块可以设为 output: false)
+# 集合配置
 collections:
   teaching:
     output: true
@@ -215,9 +217,9 @@ sass:
 
 # 输出配置
 permalink: /:categories/:title/
-timezone: Asia/Shanghai # 修改为中国时区
+timezone: Asia/Shanghai 
 
-# 插件列表 (保持原样，GitHub Pages支持这些)
+# 插件列表
 plugins:
   - jekyll-feed
   - jekyll-gist
@@ -225,6 +227,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+  - jekyll-seo-tag       # 优化SEO
+  - jekyll-include-cache # 加速构建
 
 whitelist:
   - jekyll-feed
@@ -233,6 +237,8 @@ whitelist:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+  - jekyll-seo-tag
+  - jekyll-include-cache
 
 # 归档配置
 category_archive:
